@@ -7,6 +7,10 @@ router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
 });
 
+router.get('/OneSignalSDKWorker.js',function(req,res){
+    res.sendFile(path.join(__dirname+'/OneSignalSDKWorker.js'));
+});
+
 router.get('/send',function(req,res){
     let sendNotification = function(data) {
         let headers = {
